@@ -50,7 +50,10 @@ $config = [
             'showScriptName' => false,
             'enableStrictParsing' => true,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['api/product']],
+                'GET api/products' => 'api/product/index',
+                'GET api/products/<id>' => 'api/product/find-by-id',
+                'POST api/products' => 'api/product/create-product'
+                // ['class' => 'yii\rest\UrlRule', 'controller' => ['api/product']],
             ],
         ],
     ],
