@@ -169,6 +169,4 @@ Comandos adicionales
 
 Para correr el cualquier comando, desde la consola hay que ejecutar:
 
-```
-php yii <command>
-```
+      php yii <command>
